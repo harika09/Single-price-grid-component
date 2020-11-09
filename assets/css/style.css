@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    background-color: #e5eff5;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 100px 400px
+}
+/* Community */
+.community{
+    background-color: #fff;
+    grid-column-end: span 6;
+    padding: 20px 50px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+.community h2{
+    color: #2ab2af;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px 20px;
+}
+
+.community h3{
+    padding: 0 20px;
+    color: #c0df34;
+}
+
+.community p{
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e5eff5;
+    line-height: 2;
+}
+
+/* Monthly */
+.monthly{
+    background-color: #2ab2af;
+    grid-column-end: span 3;
+    padding: 40px 50px;
+    border-radius: 0 0 0 10px;  
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Karla', sans-serif;
+}
+
+.monthly h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.monthly span{
+    font-size: 3rem;
+    color: #fff;
+}
+.monthly h4{
+    position: relative;
+    bottom: 40px;
+    left: 100px;
+    color: #e5eff5;
+    opacity: 0.4;
+    width: 70%;
+}
+
+.monthly p{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #e5eff5;
+}
+
+.button{
+    display: inline-block;
+    text-align: center;
+    background-color: #c0df34;
+    width: 100%;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .5rem;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    left: 20px;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.button:hover{
+    color: black
+}
+
+/* Why Us */
+.whyus{
+    grid-column-end: span 3;
+    background-color: #3dd1cf;
+    padding: 40px 50px;
+    border-radius: 0 0 10px 0;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.whyus h2{
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.whyus li{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+.challenge{
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 994px) and (max-width:1054px){
+    .grid__container{
+        padding: 200px 200px;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .grid__container{
+        padding: 50px 50px;
+    }
+
+    .community{
+        grid-column-end: span 6 ;
+    }
+
+    .monthly{
+        display: grid;
+        grid-column-end: span 6;
+        border-radius: 0;  
+    }
+
+    .whyus{
+        grid-column-end: span 6;
+        border-radius: 0 0 10px 10px;  
+    }
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .grid__container{
+        padding: 20px 20px;
+    }
+
+
+    .community{
+        padding: 10px 5px;
+    }
+   .community h2{
+       font-size: 1.5rem;
+      
+   }
+
+   .community h3{
+       font-size: 1rem;
+   }
+
+   .community p {
+      
+       line-height: 1;
+       font-size: 1rem;
+   }
+
+   .monthly{
+       padding: 30px 30px;
+   }
+
+   .whyus{
+       padding: 30px 30px;
+   }
+   .challenge{
+    text-align: center;
+    font-size: .8rem;
+}
+}
+
