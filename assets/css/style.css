@@ -127,7 +127,9 @@ body{
 
 
 .challenge{
+    position: relative;
     text-align: center;
+    bottom: 60px
 }
 
 
@@ -158,6 +160,11 @@ body{
     .whyus{
         grid-column-end: span 6;
         border-radius: 0 0 10px 10px;  
+    }
+    
+    .challenge{
+        position: relative;
+        bottom: 40px;
     }
 }
 
@@ -195,8 +202,10 @@ body{
        padding: 30px 30px;
    }
    .challenge{
+    position: relative;
     text-align: center;
     font-size: .8rem;
-}
+    bottom: 10px;
+    }
 }
 
